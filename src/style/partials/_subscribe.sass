@@ -1,0 +1,107 @@
+.subscribe
+	padding-top: 64px
+	padding-bottom: 57px
+	background: #b1e568 url(../img/subscribe/subscribe-bg.jpg) center center
+	background-size: cover
+	&-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-text
+		&__title
+			margin-bottom: 16px
+			margin-left: 45px
+			color: #ffffff
+			font-size: 80px
+			font-weight: 300
+		&__descr
+			color: #ffffff
+			font-size: 22px
+			font-weight: 400
+	&-form
+		display: flex
+		width: 42%
+		justify-content: flex-end
+		position: relative
+		&__input
+			width: 80%
+			padding: 30px
+			display: block
+			border: 2px solid transparent
+			border-top-left-radius: 6px
+			border-bottom-left-radius: 6px
+			color: #b9b9b9
+			font-size: 22px
+			background-color: #ffffff
+			&::placeholder
+				color: #b9b9b9
+				font-size: 22px
+				font-style: italic
+		&__button
+			display: block
+			width: 90px
+			height: 90px
+			border: 2px solid transparent
+			border-top-right-radius: 6px
+			border-bottom-right-radius: 6px
+			background: #01a2a6 url(../img/subscribe/arrow.svg) center center no-repeat
+			background-size: auto 42%
+			cursor: pointer
+.subscribe-form label.error
+	position: absolute
+	bottom: 0
+	left: 0
+	margin-bottom: -35px
+	font-size: 20px
+@media screen and (max-width: 1560px)
+	.subscribe
+		&-text
+			&__title
+				font-size: 65px
+			&__descr
+				font-size: 19px
+		&-form
+			width: auto
+			margin-right: 0
+			&__input
+				width: 364px
+@media screen and (max-width: 1220px)
+	.subscribe
+		&-text
+			&__title
+				font-size: 51px
+			&__descr
+				font-size: 15px
+		&-form
+			&__input
+				padding: 22px
+				font-size: 18px
+				width: 300px
+				min-width: auto
+				&::placeholder
+					font-size: 18px
+			&__button
+				width: 72px
+				height: 72px
+@media screen and (max-width: 880px)
+	.subscribe
+		&-container
+			flex-direction: column
+			align-items: center
+		&-text
+			margin-bottom: 35px
+		&-form
+			&__input
+				padding: 16px
+@media screen and (max-width: 495px)
+	.subscribe
+		&-form
+			width: 100%
+			&__input
+				width: 80%	
+				padding: 10px 0 10px 10px
+				&::placeholder	
+					font-size: 16px
+			&__button
+				height: 50px
+				width: 50px

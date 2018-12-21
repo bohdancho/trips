@@ -1,0 +1,140 @@
+.contacts
+	background: #2aaeac url(../img/contacts/contacts-bg.jpg) center center no-repeat
+	background-size: cover
+	padding-top: 87px
+	padding-bottom: 75px
+	&-title
+		margin-bottom: 113px
+		color: #ffffff
+		font-size: 80px // 60
+		font-weight: 300
+		text-align: center
+	&-main
+		display: flex
+		justify-content: space-between
+		&__form
+			width: 49%
+			text-align: right
+			&__input
+				margin-bottom: 17px
+				padding: 29px // 22
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.17)
+				border: 2px solid transparent
+				border-radius: 6px
+				font-family: 'Lato'
+				font-size: 22px // 14
+				color: #b9b9b9
+				background-color: #ffffff
+				&::placeholder
+					color: #b9b9b9
+					font-size: 22px // 14
+					font-style: italic
+			&__mail
+				width: 98.5%
+			&__company
+				width: 47%
+				margin-right: 4%
+			&__subject
+				width: 47%
+			&__msg
+				width: 98.5%
+				min-height: 205px
+				padding-bottom: 5px
+				resize: none
+			&__button
+				background-color: #c3f37f
+				color: #ffffff
+				text-transform: uppercase
+				&:hover
+					background-color: darken(#c3f37f, 10%)
+		&__or
+			padding-top: 100px
+			color: #ffffff
+			font-size: 22px // 14
+			font-weight: 400
+			line-height: 24px
+			text-transform: uppercase
+		&__info
+			width: 40%
+			&__title
+				margin-bottom: 64px
+				color: #ffffff
+				font-size: 50px // 44
+				font-weight: 300
+				letter-spacing: 0.22px
+			&__address
+				&__text
+					margin-bottom: 15px
+					padding-left: 52px
+					color: #ffffff
+					font-size: 20px // 12
+					position: relative
+					font-weight: 400
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						left: 12px
+						width: 19px
+						height: 19px
+						background: url(../img/contacts/icon2.svg) center center no-repeat 
+						background-size: 100% auto
+					&1
+						&_descr
+							color: #fff772
+							font-style: italic
+							text-decoration: none
+						&:before
+							background-image: url(../img/contacts/icon1.svg)
+@media screen and (max-width: 1560px)
+	.contacts
+		&-title
+			font-size: 65px
+@media screen and (max-width: 1220px)
+	.subscribe
+		&-main
+			&__form
+				&__input
+					padding: 22px
+					font-size: 18px
+@media screen and (max-width: 960px)
+	.contacts
+		&-title
+			font-size: 54px
+			margin-bottom: 55px
+		&-main
+			flex-direction: column
+			&__form
+				width: 100%
+				text-align: center
+				&__button
+					padding: 27px 33px
+					font-size: 21px
+			&__or
+				font-size: 24px
+				margin-bottom: 6px
+			&__info
+				width: 100%
+				&__title
+					font-size: 36px
+				&__address
+					&__text
+						font-size: 14px
+@media screen and (max-width: 640px)
+	.contacts
+		&-main
+			&__form
+				&__input
+					padding: 20px
+				&__button
+					padding: 18px 22px
+					font-size: 16px
+@media screen and (max-width: 495px)
+	.contacts
+		&-main
+			&__form
+				&__input
+					width: 100%
+					padding: 16px 19px
+					&::placeholder	
+						font-size: 18px

@@ -1,0 +1,155 @@
+.destination
+	padding-top: 77px	
+	padding-bottom: 70px	
+	&-descr
+		margin-bottom: 100px
+		display: flex	
+		justify-content: space-between
+		align-items: center
+		&__img
+			margin-left: 5%
+			width: 40%
+			display: block
+		&__text
+			width: 50%
+			&__title
+				margin-bottom: 5%
+				color: #29d9c2
+				font-size: 80px 
+				font-weight: 300
+				&_blue
+					color: #01a2a6
+			&__text
+				color: #777777
+				font-size: 23px
+				font-weight: 400
+				line-height: 1.5em
+	&-card
+		display: flex
+		&__img
+			display: block
+			width: 70%
+			align-self: start
+		&__text
+			width: 30%
+			padding: 30px 20px 20px 32px
+			position: relative
+			background: #f4f9fb url(../img/destination/right-bg.jpg) center center no-repeat
+			&__img
+				margin-bottom: 20px
+			&__title
+				margin-bottom: 23px
+				color: #01a2a6
+				font-family: Lato
+				font-size: 47px 
+				font-weight: 300
+			&__text
+				color: #777777
+				font-size: 23px
+				font-weight: 700
+				line-height: 1.5em
+			&:before
+				content: ''
+				position: absolute
+				left: -43px
+				top: 50%
+				margin-top: -11px
+				display: block
+				border: 22px solid transparent
+				border-right: 22px solid #f4f9fb
+@media screen and (max-width: 1560px)
+	.destination
+		&-descr
+			&__text
+				&__title
+					font-size: 65px
+				&__text
+					font-size: 21px
+					line-height: 28px
+		&-card
+			&__text
+				&__img
+					width: 68px
+				&__title
+					font-size: 34px
+				&__text
+					font-size: 16px
+@media screen and (max-width: 1220px)
+	.destination
+		&-card
+			&__text
+				padding: 15px 20px
+				&__img
+					width: 59px
+					margin-bottom: 7px
+				&__title
+					font-size: 30px
+					margin-bottom: 12px
+				&__text
+					font-size: 14px
+@media screen and (max-width: 960px)
+	.destination
+		&-descr
+			&__text
+				&__title
+					font-size: 56px
+				&__text
+					font-size: 16px
+					line-height: 24px
+		&-card
+			flex-direction: column
+			align-items: center
+			&__img
+				width: 80%
+				align-self: auto
+			&__text
+				width: 80%
+				display: flex
+				flex-direction: column
+				align-items: center
+				text-align: center
+				&:before
+					margin: 0
+					top: 0
+					left: 50%
+					margin-left: -22px
+					border-right: 22px solid transparent
+					border-bottom: 22px solid #f4f9fb
+					margin-top: -44px
+@media screen and (max-width: 680px)
+	.destination
+		&-descr
+			flex-direction: column
+			margin-bottom: 60px	
+			&__img
+				margin: 0 0 20px 0
+				width: 60%
+				min-width: 190px
+			&__text
+				width: 70%
+				text-align: center
+				&__title
+					font-size: 45px
+				&__text
+					font-size: 16px
+		&-card
+			&__img
+				width: 100%
+			&__text
+				width: 100%
+				&__text
+					font-size: 14px
+@media screen and (max-width: 495px)
+	.destination
+		&-descr
+			&__text
+				&__title
+					font-size: 38px
+				&__text
+					font-size: 14px
+					line-height: 22px
+		&-card
+			&__text
+				&:before
+					border-width: 30px
+					margin-left: -30px

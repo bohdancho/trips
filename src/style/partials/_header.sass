@@ -1,0 +1,109 @@
+.header
+  transition: 0.2s all ease
+  background: #93d0cc url(../img/header/header-bg.jpg) center top no-repeat
+  background-size: cover
+  height: 100vh
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &-container
+    margin-top: -10vh
+  &-title
+    margin-bottom: 27px
+    color: #ffffff
+    font-size: 120px
+    font-weight: 300
+    text-transform: uppercase
+    &_blue
+      color: #01a2a6
+  &-text
+    margin-bottom: 10px
+    color: #fafafa
+    font-size: 32px
+    font-weight: 400
+  &-button
+    margin-top: 47px
+    color: #10273d
+    background-color: #ffffa6
+    &:hover
+      background-color: darken(#ffffa6, 6%)
+  &-scroll 
+    position: absolute
+    width: 40px
+    height: 40px
+    display: block
+    left: 50%
+    margin-left: -20px
+    bottom: 13vh
+    &__inner
+      position: relative
+      width: 100%
+      height: 100%
+    &__item 
+      position: absolute
+      width: 40px
+      height: 11px
+      opacity: 0
+      transform: scale3d(0.5, 0.5, 0.5)
+      animation: move 3s ease-out infinite
+    &__item:first-child 
+      animation: move 3s ease-out 1s infinite
+    &__item:nth-child(2) 
+      animation: move 3s ease-out 2s infinite
+    &__item:before,
+    &__item:after 
+      content: ' '
+      position: absolute
+      top: 0
+      height: 100%
+      width: 51%
+      background: #fff
+    &__item:before 
+      left: 0
+      transform: skew(0deg, 30deg)
+    &__item:after 
+      right: 0
+      width: 50%
+      transform: skew(0deg, -30deg)
+    @keyframes move 
+      25% 
+        opacity: 1
+      33% 
+        opacity: 1
+        transform: translateY(30px)
+      67% 
+        opacity: 1
+        transform: translateY(40px)
+      100% 
+        opacity: 0
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5)
+@media screen and (max-width: 1560px)
+  .header
+    &-title
+      font-size: 100px
+    &-text
+      font-size: 24px
+@media screen and (max-width: 960px)
+  .header
+    &-title
+      font-size: 70px
+    &-text
+      font-size: 16px
+    &-button
+      margin-top: 30px
+@media screen and (max-width: 620px)
+  .header
+    &-title
+      font-size: 56px
+    &-button
+      margin-top: 27px
+@media screen and (max-width: 495px)
+  .header
+    &-title
+      font-size: 49px
+    &-text
+      font-size: 14px
+    &-button
+      margin-top: 15px

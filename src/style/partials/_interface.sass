@@ -1,0 +1,38 @@
+* 
+	box-sizing: border-box
+body 
+	font-family: 'Lato'
+input.error, textarea.error
+	border: 2px solid #ED4337 !important
+label.error
+	display: block
+	text-align: left
+	color: #ffffff
+	font-size: 21px
+	font-weight: 700
+	padding-left: 7px
+	padding-bottom: 10px
+.container
+	width: 81%
+	margin: 0 auto
+.button
+	padding: 30px 37px
+	border: none
+	border-radius: 35px
+	font-size: 23px
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+@media screen and (max-width: 1560px)
+	.button
+		padding: 26px 32px
+		font-size: 16px
+		transition: all 0.2s ease
+@media screen and (max-width: 960px)
+	.container 
+		width: 87%
+	.button
+		padding: 22px 26px
+		font-size: 14px
+	label.error
+		font-size: 18px
